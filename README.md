@@ -6,10 +6,10 @@ Ce laboratoire démontre comment styliser des composants React Native en utilisa
 
 ## Objectifs
 
-- ✅ Styliser des composants React Native avec une palette de couleurs cohérente
-- ✅ Utiliser l'API `StyleSheet` pour centraliser les styles
-- ✅ Améliorer la lisibilité et la maintenabilité du code
-- ✅ Créer une application avec une identité visuelle professionnelle
+-  Styliser des composants React Native avec une palette de couleurs cohérente
+-  Utiliser l'API `StyleSheet` pour centraliser les styles
+-  Améliorer la lisibilité et la maintenabilité du code
+-  Créer une application avec une identité visuelle professionnelle
 
 ## Palette de couleurs
 
@@ -23,15 +23,10 @@ L'application BookShelf utilise la palette suivante :
 
 ## Structure du projet
 
-```
-Lab 4/
-├── App.js                  # Composant principal qui assemble tous les composants
-├── BookShelfHeader.js      # En-tête de l'application
-├── WelcomeScreen.js        # Écran de bienvenue avec description
-├── BookShelfFooter.js      # Pied de page avec droits d'auteur
-├── package.json            # Configuration du projet
-└── README.md              # Documentation (ce fichier)
-```
+
+<img width="414" height="394" alt="Capture d’écran 2026-01-11 à 17 35 02" src="https://github.com/user-attachments/assets/58d44bd7-1de3-405d-9076-10f081a99bff" />
+
+
 
 ## Installation
 
@@ -76,7 +71,7 @@ npm run web      # Pour le web
 
 Au lieu d'utiliser des styles inline :
 ```jsx
-// ❌ À éviter (style inline)
+//  À éviter (style inline)
 <View style={{ backgroundColor: '#EE9972', padding: 20 }}>
   <Text style={{ fontSize: 24, color: 'black' }}>BookShelf</Text>
 </View>
@@ -84,7 +79,7 @@ Au lieu d'utiliser des styles inline :
 
 On utilise `StyleSheet.create()` :
 ```jsx
-// ✅ Recommandé (StyleSheet)
+//  Recommandé (StyleSheet)
 <View style={styles.container}>
   <Text style={styles.headerText}>BookShelf</Text>
 </View>
@@ -132,10 +127,3 @@ const styles = StyleSheet.create({
 - La palette de couleurs est cohérente dans toute l'application
 - Le code est commenté pour faciliter la compréhension
 
-## Auteur
-
-Lab créé dans le cadre du cours React Native.
-
-## Date
-
-2024
